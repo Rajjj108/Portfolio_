@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* display: flex; */
+}
+#top{
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+#top img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#textwrite .stable{
+    color: black;
+    font-size: 60px;
+    font-weight: 400;
+}
+#textwrite{
+    display: flex;
+    position: absolute;
+    height: 88px;
+    background-color: transparent;
+    overflow: hidden;
+    left: 42%;
+    top: 22%;
+    z-index: 999;
+}
+#for{
+    position: absolute;
+    left: 42%;
+    font-size: 15px;
+    top: 34%;
+    color: #2121f8;
+    text-decoration: underline;
+}
+#texterite #dynamic{
+    margin-left: 18px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+#dynamic li{
+    list-style: none;
+    color: #2121f8;
+    font-size: 60px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+       top: -360px;      
+    }
+}
+#dynamic li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+#dynamic li span::after{
+    content: "";
+    position: absolute;
+    height: 110%;
+    left: 0;
+    background: rgb(254, 255, 223);
+    animation: typing 3s steps(10) infinite;
+    width: 100%;
+    border-left: 5px solid #2121f8;
+}
+@keyframes typing {
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+.forimg img{
+    opacity: 0.1;
+}
+.beech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#illus{ 
+    position: relative;
+    height: 90%;
+    width: 100%;
+    
+}
+#illus img{
+    left: 0px;
+    height: 100%;
+    width: 80%;
+
+}
+#left h2{
+    color: rgb(115, 139, 139);
+    font-size: 20px;
+    font-family: cursive;   
+}
+#left h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+#left h3::before{
+    content: "<";
+    font-weight: bold;
+    color: red;
+}
+#left h2::after{
+    content: "> ";
+    font-weight: bold;
+    color: red;
+}
+#left span{
+    display: flex;
+    height: 40px;
+    width: 160px;
+    position: relative;
+    left: 45%;
+}
+#right{
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    background-color: rgb(254, 255, 223);
+}
+#foritem{
+    height: 20px;
+    width: 400px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: 15%;
+    justify-content: space-between;
+    /* background-color: brown; */
+}
+#right h1{
+    position: relative;
+    /* color: rgb(5, 3, 0); */
+    font-size: 13px;
+    font-weight: 450;
+}
+#blue{
+    color: #2121f8;
+    text-decoration: none;
+}
+#mid{
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    height: 60%;
+    width: 15%;
+    opacity: 0;
+    /* background-color: rgb(148, 248, 187); */
+}
+#third{
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;   
+}
+#png{
+    height: 80%;
+    width: 80%;
+    /* background-color: aqua; */
+    overflow: hidden;
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+#png img{
+    display: flexbox;
+    overflow: hidden;
+    height: 100%;
+    width: 70%;
+    top: 1%;
+    left: 20%; 
+}
+#card{
+    height: 100%;
+    position: relative;
+    top: 15%;
+    width: 100%;
+    /* background-color: #727272; */
+    overflow: hidden;
+}
+#cardtop{
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    top: 00px;
+    /* background-color: #7981f0; */
+}
+.top:hover #cardtop{
+    height: 58%;
+    overflow: hidden;
+    transition-duration: 4s;
+}
+#cardtop h1{
+    /* font-family: cursive; */
+    font-size: 50px;
+    left: 180px;
+    top: 20px;
+    text-decoration: underline;
+    color: rgb(115, 139, 139);
+}
+#cardb{
+    top: -50px;
+    position: relative;
+}
+#cardb h2{
+    left: 180px;
+    width: 700px;
+    height: 200px;
+    color:#2121f8;
+    font-weight: 400;
+    font-family: cursive;
+    text-decoration: underline;
+    -webkit-text-stroke: 1px #2121f8;
+    position: absolute;
+    /* opacity: 0; */
+    top: 100px;
+    /* background-color: #fff; */
+}
+#cardb h3{
+    left: 545px;
+    width: 700px;
+    height: 200px;
+    color: red;
+    font-weight: 400;
+    font-family: cursive;
+    text-decoration: underline;
+    -webkit-text-stroke: 1px red;
+    position: absolute;
+    /* opacity: 0; */
+    top: 270px;
+    /* background-color: #fff; */
+}
+
+
+/* 
+.top:hover #card h2{
+    opacity: 1;
+    transition: linear 1s;
+} */
+#cardtop h1::before{
+    content: "<";
+    font-weight: bold;
+    color: red;
+}
+#cardtop h1::after{
+    content: "> ";
+    font-weight: bold;
+    color: red;
+}
+#we{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    /* top: 20%; */
+    display: inline-table;
+    /* background-color: blueviolet; */
+}
+#we h1{
+    font-size: 50px;
+    top: 55%;
+    /* left: 10%; */
+    color: rgb(115, 139, 139);
+    font-family: cursive;
+}
+#we h5{
+    font-size: 50px;
+    top: 40%;
+    left: 10%;
+    color:#2121f8;
+    font-family: cursive;
+}
+#we h5::before{
+    content: "<";
+    font-weight: bold;
+    color: red;
+}
+#we h5::after{
+    content: "> ";
+    font-weight: bold;
+    color: red;
+}
+#we h1::before{
+    content: "<";
+    font-weight: bold;
+    color: red;
+}
+#we h1::after{
+    content: "> ";
+    font-weight: bold;
+    color: red;
+}
+#box:hover{
+    transform: scale(1.4);
+    transition-duration: 0.5s;
+    transition-delay: 0.8ms;
+    opacity: 1;
+}
+#box img{
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+}
+
