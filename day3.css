@@ -1,0 +1,479 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at center, rgb(70, 50, 50) 0, black, black 100%);
+    font-family: 'sans-serif';
+}
+#content{
+    height: 100%;
+    width: 100%;
+    
+}
+#top1{
+    height: 74%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    
+}
+#top1 img{
+    position: absolute;
+    height: 74%;
+    opacity: 0.4;
+    width: 100%;
+
+   
+}
+#logoetc{
+    height: 100px;
+    width: 100%;
+    /* background-color: transparent; */
+}
+#logobox{
+    position: absolute;
+    height: 70px;
+    width: 1500px;
+    margin-left: 200px;
+    margin-top: 17px;
+    background-color: transparent;
+}
+#logobox span{
+    font-size: 50px;
+    /* text-shadow: 1px 1px black; */
+    color: red;
+    letter-spacing: -5px;
+    font-weight: 600;
+}
+#logobox button{
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    right: 20px;
+    top: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+#box{
+    position: absolute;
+    height: 30px;
+    left: 1240px;
+    top: 25px;
+    width: 140px;
+    background-color: transparent;
+
+}
+#box h1{
+    height: 30px;
+    width: 140px;
+    letter-spacing: 0.5px;
+    font-size: 23px;
+    font-weight: 100;
+    color: white;
+}
+#text{
+    position: absolute;
+    left: 410px;
+    top: 200px;
+    height: 500px;
+    width: 1200px;
+    background-color: rgba(134, 120, 120, 0);
+    color: white;
+}
+#text h1{
+    position: relative;
+    font-size: 50px;
+    top: 105px;
+    left: 0px;
+}
+#text h5{
+    position: relative;
+    font-size: 17px;
+    top: 135px;
+    left: 332px;
+    
+}
+#text h4{
+    position: relative;
+    font-size: 25px;
+    top: 120px;
+    left: 440px;
+    
+}
+#email{
+    position: absolute;
+    width: 330px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+    top: 270px;
+    padding-left: 10px;
+    left: 360px;
+}
+#bottom{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    background-color: rgb(207, 29, 29);
+    color: white;
+    left: 690px;
+    top: 270px;
+}
+#topline{
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background-color: rgb(43, 41, 53);
+}
+#top2{
+    height: 670px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+}
+#fortext{
+    position: relative;
+    height: 500px;
+    width: 900px;
+    left: 120px;
+    top: 12px;
+    background-color: black;
+}
+#top2 img{
+    position: relative;
+    height: 500px;
+    width: 662px;
+    left: 130px;
+    top: -264px;
+}
+#top2 video{
+    position: relative;
+    height: 272px;
+   
+    top: 117px;
+    left: 216px;
+}
+#fortext h1{
+    position: absolute;
+    color: white;
+    left: 270px;
+    font-size: 50px;
+    top: 40%;
+}
+#fortext h3{
+    position: absolute;
+    color: white;
+    align-items: end;
+    left: 270px;
+    top: 57%;
+    font-weight: 100;
+    font-size: 19px;
+}
+#top3{
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+#dltext{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    background-color: black;
+    left: 55%;
+    top: 40px;
+    z-index: 2;
+}
+#top3 h1{
+    top: 165px;
+    position: absolute;
+    font-size: 60px;
+    color: white;
+}
+#top3 h5{
+    top: 320px;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    
+}
+#top3 img{
+    position: relative;
+    height: 650px;
+    top: 20px;
+    left: -510px;
+}
+#strange{
+    position: relative;
+    height: 100px;
+    width: 550px;
+    background-color: black;
+    z-index: 2;
+    left: -360px;
+    top: -150px;
+    border: 3px solid gray;
+    border-radius: 8px;
+}
+#strange img{
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    left: 20px;
+    top: 8px;
+}
+#strange h2{
+    position: relative;
+    color: white;
+    left: 120px;
+    top: 15px;
+    font-weight: 400;
+}
+#strange h4{
+    position: relative;
+    color: blue;
+    left: 120px;
+    top: 20px;
+    font-weight: 100;
+}
+#chotupng img{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+    left: 460px;
+    top: 10;
+
+}
+#top4{
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+#fori{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    background-color: black;
+    top: 80px;
+    left: 280px;
+}
+#fori img{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#fort{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    background-color: black;
+    left: 300px;
+    top: 80px;
+}
+#fort h1{
+    font-size: 60px;
+    position: relative;
+    top: 30%;
+    color: white;
+}
+#fort h5{
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    top: 30%;
+    color: white;
+}
+#top5{
+    height: 90%;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+#top5 span{
+    position: relative;
+    font-size: 50px;
+    color: white;
+    left: 700px;
+    top: 40px;
+    
+}
+#que{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color: rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que0{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color:rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que0 h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que0:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que1{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color:rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que1 h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que1:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que2{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color: rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que2 h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que2:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que3{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color: rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que3 h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que3:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que4{
+    position: relative;
+    left: 220px;
+    height: 70px;
+    width: 1450px;
+    background-color: rgb(64, 66, 77);
+    padding: 18px;
+    border-radius: 5px;
+    top: 80px;
+    margin-bottom: 10px;
+}
+#que4 h1{
+    position: relative;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+#que4:hover{
+    background-color: rgb(104, 101, 101);
+}
+#que5 {
+    position: relative;
+    left: 500px;
+    top: 130px;
+}
+#que5 h5{
+    font-size: 30px;
+    font-weight: 100;
+}
+#emailka{
+    position: relative;
+    height: 50px;
+    left: 210px;
+    font-size: 22px;
+    width: 520px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+#bottomwala{
+    position: relative;
+    left: 70px;
+    font-size: 22px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: 2px solid gray;
+}
+footer{
+     height: 100px;
+     width: 100%;
+     background-color: black;
+     
+}
+footer, h1{
+     color: red;
+     font-weight: 100;
+     font-size: 20px;
+     text-align: center;
+     left: 100px;
+     bottom: 0;
+     
+}
