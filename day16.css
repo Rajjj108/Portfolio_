@@ -241,6 +241,7 @@ svg{
     transform: translateY(100px);
     opacity: 0;
   }
+  .animate-background {
     animation: fadeInBackground 1s forwards;
   }
   
