@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+  background: #d6d6d6 #a2a2a2;
+  scroll-behavior: smooth;
+}
+header{
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 10000;
+  background-color: rgb(200, 224, 224);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  height: 10vh;
+  width: 20vw;
+  font-family: 'Pacifico';
+  font-weight: 900;
+  color: rgb(212, 240, 236);
+  display: grid;
+  place-items: center;
+  font-size: 2.5vh;
+  -webkit-text-stroke: rgb(179,218,213) 1px;
+  text-shadow: 2px 2px 4px #181818;
+  /* background-color: blueviolet; */
+}
+.names{
+  height: 10vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: aquamarine; */
+  font-size: 1.5vh;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+}
+.names a{
+  text-decoration: none;
+  color: gray;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+.names a:hover{
+  scale: 1.03;
+  color: rgb(71, 71, 71);
+}
+.nam{
+  padding-left: 15vw;
+}
+.na{
+  padding-right: 15vw;
+}
+.section{
+  margin-top: 10vh;
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url(https://i.pinimg.com/originals/c8/52/d6/c852d673b757bdb48e7ca1afd4994e89.jpg);
+  background-position: center;
+  background-size: 100vw 180vh;
+  background-repeat: no-repeat;
+  filter: invert(10%);
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.noise{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9a/512x512_Dissolve_Noise_Texture.png);
+  background-size: 256px;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  pointer-events: none;
+  padding: 5vh 5vw;
+}
+.class{
+  height: 80vh;
+  width: 90vw;
+  backdrop-filter: blur(8px);
+  background: hsla(0, 0%, 100%, 0.15);
+  border: solid 1px #db8db2;
+  box-shadow: 0 1px 10px 0 #db8db1af;
+  color: #000000;
+  display: grid;
+  place-items: center;
+  font-size: 5vh;
+}
+.home h3, h4, h5{
+  font-size: 10vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #8dcfdb;
+  -webkit-text-stroke: rgb(2, 2, 2) 1px;
+}
+.home h3{
+  border-top: solid 1px;
+  border-image: linear-gradient(to right, transparent 20%, rgb(219,141,178), transparent 80%) 1 0 0 0;
+}
+.home h4{
+  font-size: 3vw;
+  color: #d9deb4;
+}
+.home h5{
+  font-size: 1.5vw;
+  height: 2.5vw;
+  width: 7vw;
+  display: grid;
+  place-items: center;
+  background-color: rgb(219,141,178);
+  padding: 2px;
+  border-radius: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.home h6{
+  color:  rgb(53, 136, 67);
+}
+.home h5:hover{
+  scale: 1.1;
+}
+.home h5:active{
+  scale: 0.9;
+}
+.social{
+  color:  rgb(53, 136, 67);
+  height: 8vh;
+  max-width: 20vw;
+  /* background-color: #858585; */
+  display: flex;
+}
+.ri{
+  font-size: 4vh;
+}
+.second{
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  position: relative;
+  padding: 5vh 5vw;
+  background-image: url(https://i.pinimg.com/originals/dc/40/87/dc408784daaf0cb975d05a57600fd045.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130vw 190vh;
+}
+.services{
+  padding: 5vh;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  height: 25vh;
+  width: 80vw;
+  /* background-color: gray; */
+}
+.card{
+  display: grid;
+  height: 25vh;
+  width: 16vw; 
+  background: linear-gradient(45deg, #f1b892, #a2d0fd);
+  place-items: center;
+  border-radius: 2vh;
+}
+.card:hover{
+  height: 27vh;
+  transition: 200ms;
+  scale: 1.2;
+  -webkit-backdrop-filter: blur(0px);
+  backdrop-filter: blur(0px);
+  box-shadow: 0 20px 50px 0 rgba(0,0,0,0.5);
+  font-size: 90px;
+  color: #000;
+}
+.services p{
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0.2px black;
+}
+.services h2{
+  font-size: 8vw;
+  font-weight: 900;
+  color: orangered;
+  -webkit-text-stroke: 0.1px rgb(255, 117, 62);
+  font-family: "Montserrat";
+}
+.services h3{
+  font-size: 5vw;
+  font-weight: 900;
+  color: skyblue;
+  -webkit-text-stroke: 0.1px rgb(143, 221, 255);
+  font-family: "Montserrat";
+}
+.dark{
+  display: grid;
+  color: #e26e6a;
+  place-items: center;
+}
+.whi{
+  /* background-color: green; */
+  display: grid;
+  place-items: center;
+}
+.card h5{
+  color: #ff6964;
+  font-size: 3.5vh;
+}
+.card h6{
+  color: #73c3d9;
+  -webkit-text-stroke: 0.3px black;
+  font-size: 3vh;
+}
+.dark{
+  font-weight: 900;
+}
+.third{
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 5vh 5vw;
+  background-image: url(https://i.pinimg.com/originals/dd/67/4f/dd674f89d713bb2645a3292510219998.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130vw 190vh;
+  font-family: "Montserrat";
+}
+.fi,
+.sec{
+  display: flex;
+}
+.shell{
+  /* background-color: #db8db2; */
+  width: 20vw;
+  height: 25vh;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  margin-left: 2vh;
+  color: royalblue;
+}
+.shell h5{
+  font-size: 3vh;
+}
+.shell h6{
+  font-size: 2vh;
+  color: royalblue;
+  -webkit-text-stroke: rgb(30, 46, 94) 0.1px;
+}
+.skills h3{
+  color: royalblue;
+  font-size: 10vh;
+}
+.contact{
+  height: 40vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  color: goldenrod;
+  background-position: center;
+  background-size: 130vw 190vh;
+  font-family: "Montserrat";
+  padding: 5vh;
+}
+.contact input{
+  height: 6vh;
+  width: 25vw;
+  padding: 20px;
+  font-size: 1.5vh;
+  margin-top: 1vh;
+}
+.contact h5{
+  font-size: 3vh;
+  color: black;
+  -webkit-text-stroke: black 1px;
+  background-color: rgb(0, 153, 255);
+  height: 5vh;
+  width: 11vw;
+  border-radius: 2vh;
+  display: grid;
+  place-items: center;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.contact h5:hover{
+  scale: 1.1;
+}
+.contact h5:active{
+  scale: 0.9;
+}
+footer{
+  display: grid;
+  place-items: center;
+}
