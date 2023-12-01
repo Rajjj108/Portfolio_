@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeEditor</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <section>
+        <header>
+            <div class="name">
+                <div class="logo"><i class="ri-instance-fill"></i></div>
+                <div class="nam"><h1 contenteditable="true">Untitled Project <i class="ri-edit-2-line"></i></h1>
+                    <h5>Rajjj.108</h5></div>
+            </div>
+            <div class="buttons">
+                <a href="#"><i class="ri-cloud-fill"></i> Save</a>
+                <a href="#"><i class="ri-settings-4-line"></i> Settings</a>
+                <a href="#"><i class="ri-account-box-fill"></i></a>
+            </div>
+        </header>
+        <div class="editor">
+            <div class="inputs">
+                <label><i class="ri-html5-fill"></i> HTML</label>
+                <textarea id="html" onkeyup="run()"></textarea>
+
+                <label><i class="ri-css3-fill"></i> CSS</label>
+                <textarea id="css" onkeyup="run()"></textarea>
+
+                <label><i class="ri-javascript-fill"></i> JAVASCRIPT</label>
+                <textarea id="js" onkeyup="run()"></textarea>
+            </div>
+            <div class="output">
+                <label><i class="ri-play-fill"></i> Output</label>
+                <iframe id="output" contenteditable="true"></iframe>
+            </div>
+        </div>
+    </section>
+    <script src="editor.js"></script>
+</body>
+</html>
