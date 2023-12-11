@@ -1,4 +1,6 @@
-*{
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,98 +9,89 @@ html,
 body{
     height: 100%;
     width: 100%;
-    color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-section{
-    height: 100vh;
-    width: 100vw;
-    background-color: #212529;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
-    height: 8vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 25px;
-    background: #495057;
-    border-bottom: 1px solid blueviolet;
-}
-.name{
-    height: 8vh;
-    width: 80vw;
-    display: flex;
-}
-.nam{
-    outline: 0;
-    border: 0;
-}
-.buttons{
-    font-size: 2.1vh;
-    height: 5vh;
-    width: 20vw;
-    display: flex;
-    justify-content: space-around;
-    padding-left: 3.1vw;
-}
-.buttons a{
-    height: 6vh;
-    max-width: 6vw;
-    padding: 18px;
-    border-radius: 10px;
-    background-color: blueviolet;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
+    background-color: aliceblue;
+    display: grid;
+    font-family: 'Pacifico';
     place-items: center;
-}
-.buttons i{
-    margin: 4px 5px 0px 0px;
-}
-.logo i{
-    font-size: 5.8vh;
-    color: blueviolet;
-}
-.editor{
-    height: 90vh;
+    height: 8vh;
     width: 100vw;
-    padding: 20px;
-    display: flex;
 }
-.inputs, .output{
-    flex-basis: 50%;  
+main{
+    display: flex;
+    height: 84vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#paper{
+    width: 50vw;
+    height: 70vh;
+    border: 1px solid rgb(202, 193, 193);
+    background-color: #fff;
+    position: relative;
+}
+#tools{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+    border: 1px solid gray;
+    height: 68vh;
+    width: 20vw;
     padding: 10px;
 }
-textarea{
-    height: 24.6vh;
+
+#custom-size{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#paper-area{
+    position: absolute;
     width: 100%;
-    padding: 10px 20px;
-    border: 2px solid;
-    border-image: linear-gradient(to bottom, #a332ff, #333, #ffffff) 5;
-    border-image-slice: 1;
-    outline: 0;
-    outline: 0;
-    color: white;
-    background: #495057;
-    font-size: 1.8vh;
+    height: 100%;
 }
-iframe{
-    width: 100%;
-    height: 82vh;
-    background: #495057;
-    border: 2px solid;
-    border-image: linear-gradient(to bottom, #a332ff, #333, #ffffff) 5;
-    border-image-slice: 1;
-    outline: 0;
-}
-label i{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-label{
+
+#text-elem li {
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #a332ff, #495057, #495057);
-    height: 3.5vh;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#text-elem li span {
+    flex: 1;
+}
+
+#text-elem li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.draggable {
+    position: absolute;
+    cursor: move;
+}
+#text-size {
+    width: 50px;
+    margin-right: 10px;
+}
+footer{
+    height: 8vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat';
+}
+.text-el{
+    height: 20vh;
+    width: 20vw;
+    word-wrap: break-word;
 }
