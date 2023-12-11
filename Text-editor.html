@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcard Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="T-editor.css">
+</head>
+<body>
+    <header>
+        <h1>Text Editor</h1>
+    </header>
+
+    <main>
+        <div id="paper">
+            <div id="paper-area"></div>
+        </div>
+
+        <div id="tools">
+            <h2>Tools & Text</h2>
+            <div>
+                <input type="checkbox" id="edit">
+                <label for="edit">Edit Text Mode</label>
+            </div>
+            <input type="text" id="message" placeholder="Enter your message">
+            <select name="font-family">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Dancing+Script">Dancing Script</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Tangerine">Tangerine</option>
+                <option value="Lato">Lato</option>
+            </select>
+            <input type="color" id="text-color" value="#000000">
+            <button id="add-text">Add Text</button>
+
+            <input type="number" id="text-size" min="10" max="100" value="20">
+            <label for="text-size">Text Size</label>
+            <div class="text-el">
+                <h3>Text Elements</h3>
+                <ul id="text-elem"></ul>
+
+            </div>
+            <div id="paper-size">
+                <label for="size">Select Paper Size:</label>
+                <select id="size" onchange="changePaperSize()">
+                    <option value="Normal">Normal (50vw in width 70vh in height)</option>
+                    <option value="Paper">Paper size (30vw in width and 70vh in height)</option>
+                    <option value="custom">Custom Size</option>
+                </select>
+            </div>
+
+            <div id="custom-size" style="display: none;">
+                <label for="custom-width">Width:</label>
+                <input type="number" id="custom-width" placeholder="Width in pixels" value="50">
+                <label for="custom-height">Height:</label>
+                <input type="number" id="custom-height" placeholder="Height in pixels" value="50">
+                <button onclick="applyCustomSize()">Apply</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Assignment By - Celebrare</h4>
+    </footer>
+
+    <script src="T-editor.js"></script>
+</body>
+</html>
